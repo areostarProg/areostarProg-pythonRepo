@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Max-Security | Dashboard</title>
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<meta name="csrf-token" content="DGtBcmFejAfppWWIZ0EBksozitQbssAIokqYJaS7">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://147.234.84.112/css/vendor/font-awesome.min.css">
+		<link rel="stylesheet" href="http://147.234.84.112/css/vendor/ionicons.min.css">
+		<link rel="stylesheet" href="http://147.234.84.112/css/vendor/jquery-jvectormap.css">
+		<link rel="stylesheet" href="http://147.234.84.112/css/AdminLTE.min.css">
+		<link rel="stylesheet" href="http://147.234.84.112/css/_all-skins.min.css">
+		<link rel="stylesheet" href="http://147.234.84.112/css/style_theme_2.css">
+		<link rel="stylesheet" href="http://147.234.84.112/css/gijgo.min.css">
+		<link rel="stylesheet" href="http://147.234.84.112/css/flaticon.css">
+		<link rel="stylesheet" href="http://147.234.84.112/css/vendor/dataTables.bootstrap.min.css">
+		<link rel="stylesheet" href="http://147.234.84.112/css/vendor/dataTables.bootstrap.min.css">
+		<link rel="stylesheet" href="http://147.234.84.112/css/vendor/select2.min.css">
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+		<script src="http://147.234.84.112/js/vendor/jquery.min.js"></script>
+		<script src="http://147.234.84.112/js/vendor/bootstrap.min.js"></script>
+		<script src="http://147.234.84.112/js/mdb.js"></script>
+		<script src="http://147.234.84.112/js/vendor/fastclick.js"></script>
+		<script src="http://147.234.84.112/js/adminlte.min.js"></script>
+
+		<script src="http://147.234.84.112/js/vendor/jquery.sparkline.min.js"></script>
+		<script src="http://147.234.84.112/js/vendor/jquery-jvectormap.js"></script>
+		<script src="http://147.234.84.112/js/vendor/jquery-jvectormap-world-mill.js"></script>
+		 <script src="http://147.234.84.112/js/vendor/gdp-data.js"></script>
+		<script src="http://147.234.84.112/js/vendor/jquery.slimscroll.min.js"></script>
+		<script src="http://147.234.84.112/js/vendor/Chart.min.js"></script>
+		<script src="http://147.234.84.112/js/dashboard2.js"></script>
+		<script src="http://147.234.84.112/js/vendor/jquery.dataTables.min.js"></script>
+		<script src="http://147.234.84.112/js/vendor/dataTables.bootstrap.min.js"></script>
+		<script src="http://147.234.84.112/js/vendor/select2.full.min.js"></script>
+		<script src="http://147.234.84.112/js/demo.js"></script>
+		<script src="http://147.234.84.112/js/gijgo.min.js"></script>
+		<script src="http://147.234.84.112/js/init.js"></script>
+		<script src="http://147.234.84.112/js/datatables/helpers.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/validate-js/2.0.1/validate.min.js"></script>
+    </head>
+	<body class="skin-blue sidebar-mini">
+        <section>
+        <div class="wrapper">
+            <header class="main-header">
+                <a href="http://147.234.84.112/home" class="logo">
+                    <span>
+                        <img src="/images_examples/pasted-svg-288161x83.svg" class="img-circle"
+                             alt="max-security" height="18">
+                    </span>
+                    <i><img src="/images_examples/pasted-svg-288161x83.svg" alt="" height="22"></i></a>
+                <nav class="navbar navbar-static-top">
+                    <a href="#" class="sidebar-toggle waves-effect waves-light" data-toggle="push-menu"
+                       role="button"><span
+                            class="sr-only">Toggle navigation</span></a>
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown messages-menu">
+                                <a href="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown">
+                                    <i class="fa fa-envelope-o"></i><span class="label label-success">4</span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="header">You have 4 messages</li>
+                                    <li>
+                                        <ul class="menu">
+                                            <li><a href="#" class="waves-effect waves-light">
+                                                    <div class="pull-left">
+                                                        <img src="/images_examples/user2-160x160.jpg" class="img-circle"
+                                                             alt="User Image"></div>
+                                                    <h4>Support Team<small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                                    </h4>
+                                                    <p>Why not buy a new awesome theme?</p></a>
+                                            </li>
+                                            <li><a href="#" class="waves-effect waves-light">
+                                                    <div class="pull-left"><img src="/images_examples/user3-128x128.jpg"
+                                                                                class="img-circle"
+                                                                                alt="User Image"></div>
+                                                    <h4>AdminLTE Design Team<small><i class="fa fa-clock-o"></i> 2
+                                                            hours</small>
+                                                    </h4>
+                                                    <p>Why not buy a new awesome theme?</p></a>
+                                            </li>
+                                            <li><a href="#" class="waves-effect waves-light">
+                                                    <div class="pull-left"><img src="/images_examples/user4-128x128.jpg"
+                                                                                class="img-circle"
+                                                                                alt="User Image"></div>
+                                                    <h4>Developers<small><i class="fa fa-clock-o"></i> Today</small>
+                                                    </h4>
+                                                    <p>Why not buy a new awesome theme?</p></a>
+                                            </li>
+                                            <li><a href="#" class="waves-effect waves-light">
+                                                    <div class="pull-left"><img src="/images_examples/user3-128x128.jpg"
+                                                                                class="img-circle"
+                                                                                alt="User Image"></div>
+                                                    <h4>Sales Department<small><i class="fa fa-clock-o"></i>
+                                                            Yesterday</small>
+                                                    </h4>
+                                                    <p>Why not buy a new awesome theme?</p></a>
+                                            </li>
+                                            <li><a href="#" class="waves-effect waves-light">
+                                                    <div class="pull-left"><img src="/images_examples/user4-128x128.jpg"
+                                                                                class="img-circle"
+                                                                                alt="User Image"></div>
+                                                    <h4>Reviewers<small><i class="fa fa-clock-o"></i> 2 days</small>
+                                                    </h4>
+                                                    <p>Why not buy a new awesome theme?</p></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="footer"><a href="#" class="waves-effect waves-light">See All Messages</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown notifications-menu">
+                                <a href="#" class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown"><i
+                                        class="fa fa-bell-o"></i><span class="label label-warning">10</span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="header">You have 10 notifications</li>
+                                    <li>
+                                        <ul class="menu">
+                                            <li><a href="#" class="waves-effect waves-light"><i
+                                                        class="fa fa-users text-aqua"></i> 5 new members joined
+                                                    today</a>
+                                            </li>
+                                            <li><a href="#" class="waves-effect waves-light"><i
+                                                        class="fa fa-warning text-yellow"></i> Very long description
+                                                    here
+                                                    that
+                                                    may not
+                                                    fit into the page and may cause design problems</a></li>
+                                            <li><a href="#" class="waves-effect waves-light"><i
+                                                        class="fa fa-users text-red"></i> 5 new members joined</a></li>
+                                            <li><a href="#" class="waves-effect waves-light"><i
+                                                        class="fa fa-shopping-cart text-green"></i> 25 sales made</a>
+                                            </li>
+                                            <li><a href="#" class="waves-effect waves-light"><i
+                                                        class="fa fa-user text-red"></i>
+                                                    You changed your username</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="footer"><a href="#" class="waves-effect waves-light">View all</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown tasks-menu"><a href="#" class="dropdown-toggle"
+                                                               data-toggle="dropdown"><i
+                                        class="fa fa-flag-o"></i><span class="label label-danger">9</span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="header">You have 9 tasks</li>
+                                    <li>
+                                        <ul class="menu">
+                                            <li><a href="#"><h3>Design some buttons<small class="pull-right">20%</small>
+                                                    </h3>
+                                                    <div class="progress xs">
+                                                        <div class="progress-bar progress-bar-aqua" style="width: 20%"
+                                                             role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                                             aria-valuemax="100">
+                                                            <span class="sr-only">20% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                            <a href="#"><h3>Create a nice theme<small class="pull-right">40%</small>
+                                                </h3>
+                                                <div class="progress xs">
+                                                    <div class="progress-bar progress-bar-green" style="width: 40%"
+                                                         role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                                         aria-valuemax="100"><span class="sr-only">40% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            </li>
+                                            <li><a href="#">
+                                                    <h3>Some task I need to do<small class="pull-right">60%</small></h3>
+                                                    <div class="progress xs">
+                                                        <div class="progress-bar progress-bar-red" style="width: 60%"
+                                                             role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                                             aria-valuemax="100">
+                                                            <span class="sr-only">60% Complete</span></div>
+                                                    </div>
+                                                </a></li>
+                                            <li><a href="#">
+                                                    <h3>Make beautiful transitions<small class="pull-right">80%</small>
+                                                    </h3>
+                                                    <div class="progress xs">
+                                                        <div class="progress-bar progress-bar-yellow" style="width: 80%"
+                                                             role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                                             aria-valuemax="100">
+                                                            <span class="sr-only">80% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="footer"><a href="#" class="waves-effect waves-light">View all tasks</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <span class="hidden-xs">HMSoft base admin</span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="user-footer">
+                                        <div class="text-center">
+                                            <form action="http://147.234.84.112/logout" method="POST">
+                                                <input type="hidden" name="_token" value="DGtBcmFejAfppWWIZ0EBksozitQbssAIokqYJaS7">
+                                                <button type="
+												submit" class="btn btn-default btn-flat waves-effect waves-light"><i class="fa fa-power-off ml-2" aria-hidden="true"></i>Sign  out  </button>
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <aside class="main-sidebar">
+    <section class="sidebar">
+        <ul class="sidebar-menu" data-widget="tree">
+            <li  class="active" >
+        <a href="http://147.234.84.112/home" class="waves-effect mm-active waves-light">
+            <i class="fa fa-tachometer  ml-2"></i><span>Dashboard</span>
+        </a>
+    </li>
+            <li >
+        <a href="http://147.234.84.112/users" class="waves-effect mm-active waves-light">
+            <i class="flaticon-user-5  ml-2"></i><span>Users</span>
+        </a>
+    </li>
+            <li >
+        <a href="http://147.234.84.112/operations" class="waves-effect mm-active waves-light">
+            <i class="flaticon-worldwide  ml-2"></i><span>Operations</span>
+        </a>
+    </li>
+            <li >
+        <a href="http://147.234.84.112/missions" class="waves-effect mm-active waves-light">
+            <i class="flaticon-road  ml-2"></i><span>Missions</span>
+        </a>
+    </li>
+            <li class=" treeview">
+        <a href="#" class="waves-effect waves-light">
+            <i class="flaticon-clipboard-2 ml-2 "></i>
+            <span>Tasks</span><span class="pull-right-container">
+                <i class="fa fa-angle-right pull-right"></i>
+            </span>
+        </a>
+        <ul class="treeview-menu">
+                            <li >
+                    <a href="http://147.234.84.112/tasks" class="waves-effect waves-light">
+                        <i class="flaticon-clipboards  ml-2 "></i>
+                        Tasks
+                    </a>
+                </li>
+                            <li >
+                    <a href="http://147.234.84.112/sub-tasks" class="waves-effect waves-light">
+                        <i class="flaticon-clipboard-1  ml-2 "></i>
+                        SubTasks
+                    </a>
+                </li>
+                    </ul>
+    </li>
+            <li >
+        <a href="http://147.234.84.112/assets" class="waves-effect mm-active waves-light">
+            <i class="flaticon-building ml-2"></i><span>Assets</span>
+        </a>
+    </li>
+            <li class=" treeview">
+        <a href="#" class="waves-effect waves-light">
+            <i class="fa fa-cog ml-2 "></i>
+            <span>Settings</span><span class="pull-right-container">
+                <i class="fa fa-angle-right pull-right"></i>
+            </span>
+        </a>
+        <ul class="treeview-menu">
+                            <li >
+                    <a href="http://147.234.84.112/countries" class="waves-effect waves-light">
+                        <i class="flaticon-global  ml-2 "></i>
+                        Countries
+                    </a>
+                </li>
+                            <li >
+                    <a href="http://147.234.84.112/roles" class="waves-effect waves-light">
+                        <i class="flaticon-id  ml-2 "></i>
+                        Roles
+                    </a>
+                </li>
+                            <li >
+                    <a href="http://147.234.84.112/asset-types" class="waves-effect waves-light">
+                        <i class="flaticon-building ml-2 "></i>
+                        Asset types
+                    </a>
+                </li>
+                    </ul>
+    </li>
+        </ul>
+    </section>
+</aside>
+
+            <div class="content-wrapper site-main">
+                <section class="content-header">
+                    <ol class="breadcrumb">
+                                            </ol>
+                </section>
+                <section class="content">
+                        <div class="row">
+        <div class="col-xs-12">
+              <h3 class="box-title m_t_b_0"><i class="fa fa-tachometer  ml-2 f-z-20"></i>Dashboard</h3>
+        </div>
+    </div>
+    <section class="content">
+       <div class="row">
+         <div class="col-md-2 col-sm-6 col-xs-12">
+            <div class="box">
+               <div class="box-header with-border">
+                  <div class="box-tools pull-right">
+                     <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                     <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                   </div>
+                   <div class="filter_operasion">
+                        <label class="pure-material-checkbox " for="select_all"><input type="checkbox" id="select_all"><span> Selecct All</span></label>
+                    </div>
+               </div>
+                   <div class="box-body">
+                    <ul>
+                     <li><label class="pure-material-checkbox"><input type="checkbox" name="check[]"  class="checkbox"><span>Assets</span></label></li>
+                     <li><label class="pure-material-checkbox"><input type="checkbox" name="check[]"  class="checkbox"><span>Missions</span></label></li>
+                     <li><label class="pure-material-checkbox"><input type="checkbox" name="check[]"  class="checkbox"><span>Operations</span></label></li>
+                     <li><label class="pure-material-checkbox"><input type="checkbox" name="check[]"  class="checkbox"><span>Roles</span></label></li>
+                     <li><label class="pure-material-checkbox"><input type="checkbox" name="check[]"  class="checkbox"><span>Task</span></label></li>
+                   </ul>
+                 </div>
+                </div>
+             </div>
+<script>
+$(document).ready(function() {
+ var select_all = document.getElementById("select_all");
+ var checkboxes = document.getElementsByClassName("checkbox");
+ select_all.addEventListener("change", function(e){
+ 	for (i = 0; i < checkboxes.length; i++) { checkboxes[i].checked = select_all.checked;}
+ });
+ for (var i = 0; i < checkboxes.length; i++) {
+ 	checkboxes[i].addEventListener('change', function(e){ if(this.checked == false){select_all.checked = false;	}if(document.querySelectorAll('.checkbox:checked').length == checkboxes.length){select_all.checked = true;}});
+ }
+})
+</script>
+          <div class="col-md-10 col-sm-8 col-xs-12">
+            <div class="card">
+              <div class="box">
+                <div class="box-header with-border">
+                  <h3 class="box-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">VISITORS STATISTICS</font></font></h3>
+                     <div class="box-tools pull-right">
+                       <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                       <button type="button" data-action="expand"  class="btn btn-box-tool"><i class="fa fa-expand" aria-hidden="true"></i></button>
+                       <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                     </div>
+                 </div>
+                    <div class="box-body">
+              <div class="time">
+                <div class="box_clock">
+                  <div class="clock">
+                <div class="clock__second"></div>
+                <div class="clock__minute"></div>
+                  <div class="clock__hour"></div>
+                <div class="clock__axis"></div>
+                  <section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section>
+              </div></div>
+              <div class="box_clock">
+              <div class="clock">
+                <div class="clock__second"></div>
+                <div class="clock__minute"></div>
+                  <div class="clock__hour"></div>
+                <div class="clock__axis"></div>
+                  <section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section>
+              </div></div>
+              <div class="box_clock">
+              <div class="clock">
+                <div class="clock__second"></div>
+                <div class="clock__minute"></div>
+                  <div class="clock__hour"></div>
+                <div class="clock__axis"></div>
+                  <section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section>
+              </div></div>
+              <div class="box_clock">
+              <div class="clock">
+                <div class="clock__second"></div>
+                <div class="clock__minute"></div>
+                  <div class="clock__hour"></div>
+                <div class="clock__axis"></div>
+                  <section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section><section class="clock__indicator"></section>
+              </div></div>
+              </div>
+            <div class="demo-map col-lg-12" style="height:500px"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+  <script>
+var currentSec = getSecondsToday();
+var seconds = (currentSec / 60) % 1;
+var minutes = (currentSec / 3600) % 1;
+var hours = (currentSec / 43200) % 1;
+setTime(60 * seconds, "second");
+setTime(3600 * minutes, "minute");
+setTime(43200 * hours, "hour");
+function setTime(left, hand) { $(".clock__" + hand).css("animation-delay", "" + left * -1 + "s");}
+function getSecondsToday() {
+  var now = new Date();
+  var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  var diff = now - today;
+  return Math.round(diff / 1000);
+}
+    </script>
+<script>
+        /*$(function(){
+            $('.demo-map').vectorMap({
+              map: 'world_mill',
+              backgroundColor: 'transparent',
+
+              series: {
+                regions: [{
+                  values: gdpData,
+                  scale: ['#C8EEFF', '#0071A4'],
+                  normalizeFunction: 'polynomial'
+                }]
+              },
+
+              hoverOpacity: 0.7,
+              hoverColor: true,
+			  markerStyle: {
+      initial: {
+        fill: '#02a499',
+        stroke: '#fff',
+		'stroke-width': 7,
+		'stroke-opacity': 0.4,
+		 r: 9,
+		'fill-opacity': 0.9,
+		 scale: [5, 20],
+      },
+	   hover: {
+    stroke: '#0071bc',
+	'stroke-opacity': 0.8,
+    cursor: 'pointer'
+  },
+    },
+			   markers: [
+      {latLng: [41.90, 12.45], name: 'Vatican City'},
+      {latLng: [43.73, 7.41], name: 'Monaco'},
+      {latLng: [-0.52, 166.93], name: 'Nauru'},
+      {latLng: [-8.51, 179.21], name: 'Tuvalu'},
+      {latLng: [43.93, 12.46], name: 'San Marino'},
+      {latLng: [47.14, 9.52], name: 'Liechtenstein'},
+      {latLng: [7.11, 171.06], name: 'Marshall Islands'},
+      {latLng: [17.3, -62.73], name: 'Saint Kitts and Nevis'},
+      {latLng: [3.2, 73.22], name: 'Maldives'},
+      {latLng: [35.88, 14.5], name: 'Malta'},
+      {latLng: [12.05, -61.75], name: 'Grenada'},
+      {latLng: [13.16, -61.23], name: 'Saint Vincent and the Grenadines'},
+      {latLng: [13.16, -59.55], name: 'Barbados'},
+      {latLng: [17.11, -61.85], name: 'Antigua and Barbuda'},
+      {latLng: [-4.61, 55.45], name: 'Seychelles'},
+      {latLng: [7.35, 134.46], name: 'Palau'},
+      {latLng: [42.5, 1.51], name: 'Andorra'},
+      {latLng: [14.01, -60.98], name: 'Saint Lucia'},
+      {latLng: [6.91, 158.18], name: 'Federated States of Micronesia'},
+      {latLng: [1.3, 103.8], name: 'Singapore'},
+      {latLng: [1.46, 173.03], name: 'Kiribati'},
+      {latLng: [-21.13, -175.2], name: 'Tonga'},
+      {latLng: [15.3, -61.38], name: 'Dominica'},
+      {latLng: [-20.2, 57.5], name: 'Mauritius'},
+      {latLng: [26.02, 50.55], name: 'Bahrain'},
+      {latLng: [0.33, 6.73], name: 'São Tomé and Príncipe'}
+    ]
+            });
+          });
+
+        $('button[data-action="expand"]').on('click',function(e){
+            e.preventDefault();
+            $(this).closest('.card').find('[data-action="expand"] i').toggleClass('fa-expand fa-compress');
+            $(this).closest('.card').toggleClass('card-fullscreen');
+        });*/
+
+        </script>
+        </section>
+                </section>
+            </div>
+            <footer class="main-footer">
+                <strong>Copyright &copy; 2020 <a href="http://www.tourtech.co.il/"
+                                                 target="_blank">Tourtech.co.il</a>.</strong>
+                All rights reserved.
+            </footer>
+            <div class="control-sidebar-bg"></div>
+                        <div data-actions class="hide">
+    <div>
+        <a href="#data-edit"
+           class="btn btn-outline-white btn-rounded btn-sm px-2 green-create waves-effect waves-light waves-brown bg_grey">
+            <i class="icon ion-android-create"></i>
+        </a>
+        <a href="#modalFormShow" src="#data-show" data-edit-url="#data-edit"
+           class="btn btn-outline-white btn-rounded btn-sm px-2 blue-view waves-effect waves-light waves-brown bg_grey"
+           data-toggle="modal" data-target="#modalFormShow">
+            <i class="icon ion-eye"></i>
+        </a>
+        <form method="POST" action="#data-delete" data-delete-form>
+            <input type="hidden" name="_method" value="DELETE">
+            <input type="hidden" name="_token" value="DGtBcmFejAfppWWIZ0EBksozitQbssAIokqYJaS7">
+            <a href="#modalFormDelete" src="#data-delete"
+               class="btn btn-outline-white btn-rounded btn-sm px-2 blue-view waves-effect waves-light waves-brown bg_grey"
+               data-toggle="modal" data-target="#modalFormDelete">
+                <i class="icon ion-android-delete"></i>
+            </a>
+        </form>
+    </div>
+</div>
+            <div class="modal fade" id="modalFormDelete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title w-100 font-weight-bold">
+                    <span class="title_modal">Delete confirmation</span>
+                </h4>
+            </div>
+            <h1 data-confirm>Are you sure want want to delete <span data-placement="header"></span></h1>
+            <h1 data-alert>You can't delete <span data-placement="header"></span></h1>
+            <h2 data-alert>Reasons: </h2>
+            <div class="modal-body mx-3">
+                <div class="box_content">
+                    <ul data-info></ul>
+                </div>
+            </div>
+            <form method="POST" action="#data-delete">
+                <input type="hidden" name="_token" value="DGtBcmFejAfppWWIZ0EBksozitQbssAIokqYJaS7">
+                <input type="hidden" name="_method" value="DELETE">
+                <input type="hidden" name="force" value="true">
+                <div class="modal-footer d-flex justify-content-center">
+                    <button data-confirm type="submit" class="btn btn-primary waves-effect waves-light">
+                        <i class="icon ion-android-create ml-2"></i>
+                        <span>Confirm delete</span>
+                    </button>
+                    <button class="btn btn-unique" data-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+</body>
+</html>
